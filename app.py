@@ -40,7 +40,7 @@ def classify_state(detections):
     return "None"
 
 def process_video(video_path):
-    cap = cv2.VideoCapture(video_path) #add the path of the video or put 0 for the web cam to work
+    cap = cv2.VideoCapture(video_path) #add the path of the video in mp4 and for image in jpg format or put 0 for the web cam to work
     frames = []
     while True:
         ret, frame = cap.read()
@@ -74,4 +74,5 @@ if uploaded_file:
     st.success("Done! Showing first few frames:")
     for f in frames[:30]:  # Show only first 30 frames to save resources
         st.image(cv2.cvtColor(f, cv2.COLOR_BGR2RGB))
+
 
