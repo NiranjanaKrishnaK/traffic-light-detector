@@ -65,7 +65,7 @@ def draw_detections(frame, detections, state):
                 cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
 def main():
-    cap = cv2.VideoCapture(0)  #if you need to upload then put the path of the video in place of zero
+    cap = cv2.VideoCapture(0)  #if you need to upload then put the path of the video in mp4 or jpg format for image in place of zero
 
     while True:
         ret, frame = cap.read()
@@ -89,6 +89,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
