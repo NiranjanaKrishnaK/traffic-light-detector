@@ -12,7 +12,7 @@ COLOR_RANGES = {
 # Parameter to ignore the tiny blobs
 MIN_AREA = 300
 # Parameter 0=flat and 1=perfect circle
-CIRCULARITY = 0.5    # 0=flat, 1=perfect circle
+CIRCULARITY = 0.5    
 
 def detect_color_objects(hsv_frame):
     detections = []
@@ -65,7 +65,7 @@ def draw_detections(frame, detections, state):
                 cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
 def main():
-    cap = cv2.VideoCapture(0)  
+    cap = cv2.VideoCapture(0)  #if you need to upload then put the path of the video in place of zero
 
     while True:
         ret, frame = cap.read()
@@ -89,5 +89,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
