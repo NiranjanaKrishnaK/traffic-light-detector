@@ -4,7 +4,7 @@ import numpy as np
 # HSV color ranges for Red (two ranges), Yellow, and Green
 COLOR_RANGES = {
     'Red1':   [(0, 100, 100), (10, 255, 255)],
-    'Red2':   [(170, 100, 100), (180, 255, 255)],  # wraparound red
+    'Red2':   [(170, 100, 100), (180, 255, 255)],  
     'Yellow': [(20, 100, 100), (30, 255, 255)],
     'Green':  [(40, 100, 100), (70, 255, 255)]
 }
@@ -89,4 +89,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
