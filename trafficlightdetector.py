@@ -9,7 +9,7 @@ COLOR_RANGES = {
     'Green':  [(40, 100, 100), (70, 255, 255)]
 }
 
-# Parameter to ignore the tiny blobs)
+# Parameter to ignore the tiny blobs
 MIN_AREA = 300
 # Parameter 0=flat and 1=perfect circle
 CIRCULARITY = 0.5    # 0=flat, 1=perfect circle
@@ -89,3 +89,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
